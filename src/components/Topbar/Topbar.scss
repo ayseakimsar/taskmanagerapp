@@ -1,0 +1,48 @@
+@import "../../shared/Colors.scss";
+
+.topbar {
+  background-color: color(sidebar-topbar-background);
+  height: 6rem;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__task-group-name {
+    color: color(text-color-primary);
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    color: color(text-color-primary);
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    .topbar__icon {
+      svg path {
+        transition: all 0.25s ease;
+      }
+    }
+
+    &:hover {
+      color: color(hover);
+
+      svg path {
+        fill: color(hover);
+      }
+    }
+  }
+}

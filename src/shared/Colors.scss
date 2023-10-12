@@ -1,0 +1,13 @@
+$colors: (
+  "navbar-background": #3a5673,
+  "sidebar-topbar-background": #062437,
+  "main-content-background": #07273c,
+  "border": #000,
+  "text-color-primary": #fff,
+  "text-color-secondary": #94a3b8,
+  "hover": #93c5fd,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
